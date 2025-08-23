@@ -71,43 +71,38 @@ pipeline {
 
 ---
 
-## Project Workflow
+## 📂 Project Workflow  
 
-   Developer
-      │
-      ▼
-   GitHub (Source Code Repository)
-      │
-      ▼
-   Jenkins (CI/CD Pipeline)
-      │
-      ├──► SonarQube (Code Quality Analysis)
-      │
-      ├──► Maven (Build & Package WAR)
-      │
-      ├──► Nexus Repository (Artifact Storage)
-      │
-      └──► Tomcat Server on AWS EC2 (Deployment)
-      │
-      ▼
-   End User (Access Deployed Application)
+**Developer**  
+   ↓  
+**GitHub (Source Code Repository)**  
+   ↓  
+**Jenkins (CI/CD Pipeline)**  
+   → **SonarQube (Code Quality Analysis)**  
+   → **Maven (Build & Package WAR)**  
+   → **Nexus Repository (Artifact Storage)**  
+   → **Tomcat Server on AWS EC2 (Deployment)**  
+   ↓  
+**End User (Access Deployed Application)**  
+
 
 ---
 
-## ✅ Outcomes
--> Automated complete CI/CD workflow
-->Improved code quality with SonarQube integration
-->Version-controlled artifacts in Nexus
-->Faster and reliable deployments with Jenkins + Tomcat
+## ✅ Outcomes  
+
+- Automated complete **CI/CD workflow**  
+- Improved code quality with **SonarQube integration**  
+- Version-controlled artifacts in **Nexus**  
+- Faster and reliable deployments with **Jenkins + Tomcat**
 
 ---
 
-## Implementation of Project
-1.Launch 4 servers(Jenkins,SonarQube,Nexus,Tomcat)
-2.Setup all the tools on their respective servers
-3.Install the following plugins in Jenkins to deploy an application
-    -SonarQube Scanner
-    -Nexus Artifact Uploader
-    -Deploy to Container
-4.Make all the required integrations and setup the tools
-5.Write the pipeline
+## ⚙️ Implementation of Project  
+
+- Launched **4 servers**: Jenkins, SonarQube, Nexus, Tomcat  
+- Installed and configured all tools on respective servers  
+- Integrated **Jenkins with SonarQube, Nexus, and Tomcat**  
+- Installed Jenkins plugins: SonarQube Scanner, Nexus Artifact Uploader, Deploy to Container  
+- Automated build, test, artifact upload, and deployment using **Jenkins Pipeline**  
+
+
