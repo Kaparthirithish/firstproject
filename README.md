@@ -67,11 +67,11 @@ pipeline {
         }
     }
 }
-
+```
 
 ---
 
-## Project Workflo
+## Project Workflow
 
    Developer
       │
@@ -94,8 +94,7 @@ pipeline {
 
 ---
 
-✅ Outcomes
-
+## ✅ Outcomes
 -> Automated complete CI/CD workflow
 ->Improved code quality with SonarQube integration
 ->Version-controlled artifacts in Nexus
